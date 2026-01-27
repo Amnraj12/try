@@ -1,7 +1,6 @@
 # try
 
-'''mermaid 
-flowchart TD
+'''flowchart TD
     Start([Client Request: GET /tables]) --> API[API Endpoint<br/>file_processing.py:146<br/>async def get_tables]
     
     API --> ValidateOrg[Validate org_slug<br/>file_processing.py:168]
