@@ -1,6 +1,7 @@
-# try
+# Issue 1: Blocking I/O
 
-'''flowchart TB
+```mermaid
+flowchart TB
     Start([GET /tables Request]) --> API[FastAPI Endpoint<br/>file_processing.py L146<br/>async def get_tables]
     
     API --> Service[FileProcessingService.get_tables<br/>file_processing_service.py L189<br/>async def get_tables]
@@ -28,4 +29,5 @@
     style Problem fill:#ff6b6b,stroke:#c92a2a,stroke-width:3px,color:#fff
     style Fetch fill:#ff6b6b,stroke:#c92a2a,stroke-width:3px,color:#fff
     style Impact fill:#ffa94d,stroke:#fd7e14,stroke-width:2px
-    style Solution fill:#51cf66,stroke:#2f9e44,stroke-width:2px'''
+    style Solution fill:#51cf66,stroke:#2f9e44,stroke-width:2px
+```
